@@ -19,6 +19,12 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import amirAvatar from "@/assets/team/amir-khan.png";
+import lisaAvatar from "@/assets/team/lisa-park.png";
+import jamesAvatar from "@/assets/team/james-cole.png";
+import priyaAvatar from "@/assets/team/priya-sharma.png";
+import davidAvatar from "@/assets/team/david-okonkwo.png";
+import ninaAvatar from "@/assets/team/nina-volkov.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -50,12 +56,12 @@ const testimonials = [
 ];
 
 const team = [
-  { name: "Dr. Amir Khan", role: "AI Automation Architect", avatar: "AK" },
-  { name: "Lisa Park", role: "AI Systems Engineer", avatar: "LP" },
-  { name: "James Cole", role: "AI Research Specialist", avatar: "JC" },
-  { name: "Priya Sharma", role: "AI Data Analyst", avatar: "PS" },
-  { name: "David Okonkwo", role: "Automation Engineer", avatar: "DO" },
-  { name: "Nina Volkov", role: "AI Product Strategist", avatar: "NV" },
+  { name: "Dr. Amir Khan", role: "AI Automation Architect", img: amirAvatar },
+  { name: "Lisa Park", role: "AI Systems Engineer", img: lisaAvatar },
+  { name: "James Cole", role: "AI Research Specialist", img: jamesAvatar },
+  { name: "Priya Sharma", role: "AI Data Analyst", img: priyaAvatar },
+  { name: "David Okonkwo", role: "Automation Engineer", img: davidAvatar },
+  { name: "Nina Volkov", role: "AI Product Strategist", img: ninaAvatar },
 ];
 
 const techStack = [
@@ -212,7 +218,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {team.map((m, i) => (
               <motion.div key={m.name} {...fadeUp} transition={{delay:i*0.05}} className="text-center">
-                <div className="w-20 h-20 rounded-full bg-secondary border border-border flex items-center justify-center mx-auto mb-3 text-xl font-bold text-primary">{m.avatar}</div>
+                <img src={m.img} alt={m.name} className="w-20 h-20 rounded-full object-cover border-2 border-border mx-auto mb-3" />
                 <h4 className="font-display font-semibold text-sm text-foreground">{m.name}</h4>
                 <p className="text-xs text-muted-foreground mt-0.5">{m.role}</p>
               </motion.div>
