@@ -19,6 +19,12 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import amirAvatar from "@/assets/team/amir-khan.png";
+import lisaAvatar from "@/assets/team/lisa-park.png";
+import jamesAvatar from "@/assets/team/james-cole.png";
+import priyaAvatar from "@/assets/team/priya-sharma.png";
+import davidAvatar from "@/assets/team/david-okonkwo.png";
+import ninaAvatar from "@/assets/team/nina-volkov.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
