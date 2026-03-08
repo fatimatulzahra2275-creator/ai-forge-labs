@@ -13,15 +13,20 @@ import ninaAvatar from "@/assets/team/nina-volkov.png";
 
 const fadeUp = { initial: { opacity: 0, y: 30 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true as const }, transition: { duration: 0.5 } };
 
+const teamAvatars: Record<string, string> = {
+  "Dr. Amir Khan": amirAvatar, "Lisa Park": lisaAvatar, "James Cole": jamesAvatar,
+  "Priya Sharma": priyaAvatar, "David Okonkwo": davidAvatar, "Nina Volkov": ninaAvatar,
+};
+
 const team = [
-  { name: "Dr. Amir Khan", role: "AI Automation Architect", bio: "15+ years in AI systems design. Former lead at a Fortune 500 AI division.", avatar: "AK" },
-  { name: "Lisa Park", role: "AI Systems Engineer", bio: "Full-stack AI engineer specializing in workflow automation and integrations.", avatar: "LP" },
-  { name: "James Cole", role: "AI Research Specialist", bio: "PhD in Machine Learning. Focuses on applied AI research for business.", avatar: "JC" },
-  { name: "Priya Sharma", role: "AI Data Analyst", bio: "Data science expert turning complex datasets into actionable insights.", avatar: "PS" },
-  { name: "David Okonkwo", role: "Automation Engineer", bio: "Expert in building scalable automation pipelines across platforms.", avatar: "DO" },
-  { name: "Nina Volkov", role: "AI Product Strategist", bio: "Bridges AI technology and business strategy for maximum impact.", avatar: "NV" },
-  { name: "Marco Silva", role: "AI Solutions Architect", bio: "Designs end-to-end AI solutions for enterprise-grade deployments.", avatar: "MS" },
-  { name: "Emily Zhang", role: "AI UX Designer", bio: "Creates intuitive interfaces for AI-powered products and dashboards.", avatar: "EZ" },
+  { name: "Dr. Amir Khan", role: "AI Automation Architect", bio: "15+ years in AI systems design. Former lead at a Fortune 500 AI division." },
+  { name: "Lisa Park", role: "AI Systems Engineer", bio: "Full-stack AI engineer specializing in workflow automation and integrations." },
+  { name: "James Cole", role: "AI Research Specialist", bio: "PhD in Machine Learning. Focuses on applied AI research for business." },
+  { name: "Priya Sharma", role: "AI Data Analyst", bio: "Data science expert turning complex datasets into actionable insights." },
+  { name: "David Okonkwo", role: "Automation Engineer", bio: "Expert in building scalable automation pipelines across platforms." },
+  { name: "Nina Volkov", role: "AI Product Strategist", bio: "Bridges AI technology and business strategy for maximum impact." },
+  { name: "Marco Silva", role: "AI Solutions Architect", bio: "Designs end-to-end AI solutions for enterprise-grade deployments." },
+  { name: "Emily Zhang", role: "AI UX Designer", bio: "Creates intuitive interfaces for AI-powered products and dashboards." },
 ];
 
 const values = [
