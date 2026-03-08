@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Award, Globe, Lightbulb, Rocket, Target, Users, Zap } from "lucide-react";
+import amirAvatar from "@/assets/team/amir-khan.png";
+import lisaAvatar from "@/assets/team/lisa-park.png";
+import jamesAvatar from "@/assets/team/james-cole.png";
+import priyaAvatar from "@/assets/team/priya-sharma.png";
+import davidAvatar from "@/assets/team/david-okonkwo.png";
+import ninaAvatar from "@/assets/team/nina-volkov.png";
 
 const fadeUp = { initial: { opacity: 0, y: 30 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true as const }, transition: { duration: 0.5 } };
 
