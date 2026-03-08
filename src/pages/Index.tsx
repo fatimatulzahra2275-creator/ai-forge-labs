@@ -218,7 +218,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {team.map((m, i) => (
               <motion.div key={m.name} {...fadeUp} transition={{delay:i*0.05}} className="text-center">
-                <div className="w-20 h-20 rounded-full bg-secondary border border-border flex items-center justify-center mx-auto mb-3 text-xl font-bold text-primary">{m.avatar}</div>
+                <img src={m.img} alt={m.name} className="w-20 h-20 rounded-full object-cover border-2 border-border mx-auto mb-3" />
                 <h4 className="font-display font-semibold text-sm text-foreground">{m.name}</h4>
                 <p className="text-xs text-muted-foreground mt-0.5">{m.role}</p>
               </motion.div>

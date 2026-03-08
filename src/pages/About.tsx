@@ -79,7 +79,11 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {team.map((m, i) => (
               <motion.div key={m.name} {...fadeUp} transition={{ delay: i * 0.05 }} className="glass-card p-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-secondary border border-border flex items-center justify-center mx-auto mb-3 text-lg font-bold text-primary">{m.avatar}</div>
+                {teamAvatars[m.name] ? (
+                  <img src={teamAvatars[m.name]} alt={m.name} className="w-16 h-16 rounded-full object-cover border-2 border-border mx-auto mb-3" />
+                ) : (
+                  <div className="w-16 h-16 rounded-full bg-secondary border border-border flex items-center justify-center mx-auto mb-3 text-lg font-bold text-primary">{m.name.split(" ").map(n => n[0]).join("")}</div>
+                )}
                 <h4 className="font-display font-semibold text-foreground text-sm">{m.name}</h4>
                 <p className="text-xs text-primary mt-0.5 mb-2">{m.role}</p>
                 <p className="text-xs text-muted-foreground">{m.bio}</p>
