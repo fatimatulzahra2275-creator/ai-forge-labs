@@ -56,12 +56,12 @@ const testimonials = [
 ];
 
 const team = [
-  { name: "Dr. Amir Khan", role: "AI Automation Architect", avatar: "AK" },
-  { name: "Lisa Park", role: "AI Systems Engineer", avatar: "LP" },
-  { name: "James Cole", role: "AI Research Specialist", avatar: "JC" },
-  { name: "Priya Sharma", role: "AI Data Analyst", avatar: "PS" },
-  { name: "David Okonkwo", role: "Automation Engineer", avatar: "DO" },
-  { name: "Nina Volkov", role: "AI Product Strategist", avatar: "NV" },
+  { name: "Dr. Amir Khan", role: "AI Automation Architect", img: amirAvatar },
+  { name: "Lisa Park", role: "AI Systems Engineer", img: lisaAvatar },
+  { name: "James Cole", role: "AI Research Specialist", img: jamesAvatar },
+  { name: "Priya Sharma", role: "AI Data Analyst", img: priyaAvatar },
+  { name: "David Okonkwo", role: "Automation Engineer", img: davidAvatar },
+  { name: "Nina Volkov", role: "AI Product Strategist", img: ninaAvatar },
 ];
 
 const techStack = [
